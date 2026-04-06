@@ -14,9 +14,9 @@ SHIFT RIGHT - Shifts four-bit number right in the four-bit space
 - 'four_bit_alu.v' - RTL design
 - 'four_bit_alu_tb.py' - Python cocotb verification testbench
 ## How to Simulate
-'''bash
+```bash
 make
-'''
+```
 ## Tools
 Icarus Verilog, cocotb
 ## Status
