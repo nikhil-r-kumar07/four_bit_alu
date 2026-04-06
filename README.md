@@ -11,8 +11,8 @@ NOT - Flips every bit of a four-bit number so that 1 becomes 0 and 0 becomes 1
 SHIFT LEFT - Shifts four-bit number left in the four-bit space
 SHIFT RIGHT - Shifts four-bit number right in the four-bit space
 ## Files
-- 'four_bit_alu.v' - RTL design
-- 'four_bit_alu_tb.py' - Python cocotb verification testbench
+- `four_bit_alu.v` - RTL design
+- `four_bit_alu_tb.py` - Python cocotb verification testbench
 ## How to Simulate
 ```bash
 make
