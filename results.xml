@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1775491595" />
+    <testcase name="test_add" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="4" time="0.0007836818695068359" sim_time_ns="1.0" ratio_time="1276.0279890477639" />
+    <testcase name="test_subtract" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="13" time="7.915496826171875e-05" sim_time_ns="1.0" ratio_time="12633.44578313253" />
+    <testcase name="test_and" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="22" time="6.818771362304688e-05" sim_time_ns="1.0" ratio_time="14665.398601398601" />
+    <testcase name="test_or" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="30" time="6.413459777832031e-05" sim_time_ns="1.0" ratio_time="15592.208178438661" />
+    <testcase name="test_xor" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="38" time="6.508827209472656e-05" sim_time_ns="1.0" ratio_time="15363.750915750916" />
+    <testcase name="test_not" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="46" time="5.91278076171875e-05" sim_time_ns="1.0" ratio_time="16912.516129032258" />
+    <testcase name="test_shift_left" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="53" time="5.888938903808594e-05" sim_time_ns="1.0" ratio_time="16980.987854251012" />
+    <testcase name="test_shift_right" classname="four_bit_alu_tb" file="/Users/nikhilkumar/Documents/GitHub/four_bit_alu/four_bit_alu_tb.py" lineno="60" time="5.984306335449219e-05" sim_time_ns="1.0" ratio_time="16710.37450199203" />
+  </testsuite>
+</testsuites>

@@ -1,4 +1,4 @@
-module fourbitalu (
+module four_bit_alu (
     input [3:0] A, B,
     input [2:0] opcode,
     output reg [3:0] result,
@@ -17,7 +17,7 @@ always @(*) begin
         3'b111 : result = A >> 1;
         default : result = 4'b0000;
     endcase
-    carry = (opcode == 3'b000) ? (A + B > 4'b1111) : 0;
+    carry = (opcode == 3'b000) ? ({1'b0, A} + {1'b0, B} > 4'b1111) : 0;
     carry = (opcode == 3'b001) ? (A < B) : carry;
 end
 assign zero = (result == 4'b0000) ? 1 : 0;
