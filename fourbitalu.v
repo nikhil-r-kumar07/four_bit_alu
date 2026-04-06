@@ -1,23 +1,24 @@
 module fourbitalu (
     input [3:0] A, B,
     input [2:0] opcode,
-    output [3:0] result,
-    output carry,
+    output reg [3:0] result,
+    output reg carry,
     output zero
 );
-
-reg [3:0] result;
-reg carry;
 always @(*) begin
-    case (opcode) begin
-        3'b000 : A + B;
-        3'b001 : A - B;
-        3'b010 : A & B;
-        3'b011 : A | B;
-        3'b100 : A ^ B;
-        3'b101 : ~A;
-        3'b110 : A - 1;
-        3'b111 : A + 1;
-    end
+    case (opcode)
+        3'b000 : result = A + B;
+        3'b001 : result = A - B;
+        3'b010 : result = A & B;
+        3'b011 : result = A | B;
+        3'b100 : result = A ^ B;
+        3'b101 : result = ~A;
+        3'b110 : result = A << 1;
+        3'b111 : result = A >> 1;
+        default : result = 4'b0000;
+    endcase
+    carry = (opcode == 3'b000) ? (A + B > 4'b1111) : 0;
+    carry = (opcode == 3'b001) ? (A < B) : carry;
 end
+assign zero = (result == 4'b0000) ? 1 : 0;
 endmodule
